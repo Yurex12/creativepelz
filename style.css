@@ -1,0 +1,11 @@
+*{
+    margin: 40px 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    background: red;
+    color: white;
+}
+
