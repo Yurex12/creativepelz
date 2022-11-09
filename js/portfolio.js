@@ -37,7 +37,7 @@ let password = document.getElementById("password");
          message.style.color = "green"    
           setTimeout(login , 1500)     
         function login (){                  
-         window.location.assign("Portfoliopage.html")
+         window.location.assign("portfoliopage.html")
            
           
          }
