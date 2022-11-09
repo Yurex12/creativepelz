@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta  name="theme-color" color="#000000">
+    <title>Creative Pelz</title>
+    
+    <!-- font-awesome-icon -->
+    <script src="https://kit.fontawesome.com/a497a0fb12.js" crossorigin="anonymous"></script>
+    
+      <!-- Animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsiveness.css">
+    
+    <script src="js/app.js" defer></script>
+    <script src="js/portfolio.js" defer></script>
+</head>
+<body>
+    
+      <header>
+           <nav class="container flex">                       
+                 <a href="index.html" class="logo-section flex">
+            <img src="media/cp_logo.png" alt="logo">                    
+                 </a>
+                          
+          <div class="navs">     
+                                          
+        <ul class="nav-section">
+     <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+      <li><a href="secured.html"><i class="fa-solid fa-briefcase"></i>Portfolio</a></li>
+      <li><a href="contact.html"><i class="fa-regular fa-address-book"></i>Contact Us</a></li> 
+      <li><a href="about.html"><i class="fa-solid fa-circle-info"></i>About Us</a></li>
+      <li><a href="ratings.html"><i class="fa-solid fa-star-half-stroke"></i>Ratings And Reviews</a></li>
+      </ul>
+      
+     <ul class="social-section">  
+   <li><a href="https://twitter.com/creativepelz?t=r1RMfTG6nbKJbI_tu5QiZA&s=09"><i class="fa-brands fa-twitter"></i></a></li>  
+      <li><a href="https://instagram.com/creativepelz?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="https://www.facebook.com/creativepelz"><i class="fa-brands fa-facebook"></i></a></li>     
+  </ul>     
+       
+      </div>    
+          
+ <div class="menuToggle">
+     <span></span>
+    <span></span>
+    <span></span>
+        </div>          
+                                     
+   </nav>       
+    </header>  
+    
+    
+    <section class="hero hero-secured"></section>
+     
+    <section>
+        <div class="container" data-aos="zoom-in">
+            <p class="my">This page has been locked with a unique PASSCODE to prevent data theft and unauthorized access.
+Please enter your Name and the Passcode given to you by the creators to explore our most appealing design projects.</p>
+        </div>
+    </section>
+     
+    
+    <section>
+        <div class="container" data-aos="zoom-in">
+            <form class="login">
+                <div class="lock flex my">
+                    <img src="media/locked.png" alt="" id="locked">
+
+                    <span id="message">login</span>
+                </div>
+                
+                <div class="field"> 
+             <label for="name">Name</label> 
+                 <div class="input-box">                    
+                  <input type="text" name="name" id="username" placeholder="John Doe" required>
+                                                
+                 </div>
+                 </div>
+                
+                
+                <div class="field"> 
+             <label for="password">Passcode</label> 
+                 <div class="input-box">                    
+                  <input type="password" name="password" id="password" placeholder="*******" class="active" required>
+                  
+              <img src="media/show.png" onclick="authenticate()" id="eye-image" alt="">
+                                 
+                 </div>
+                 </div>
+                
+               
+               
+                
+               
+                
+                <div class="field flex">
+                    <a onclick="validation()" class="btn btn-order">Explore!</a>
+                  <a href="https://wa.me/2349158219642?text=Hi+Creative+Pelz!+I+Would+love+to+view+your+Portfolio+page,+Kindly+send+the+passcode.+My+name+is%20" class="get-code">Get Code</a>
+                </div>
+                
+                 
+                
+            </form>
+        </div>
+    </section>
+    
+    
+    <!-- pop up message -->
+     <div class="pop-up pop-up-alert">
+       <div class="pop-up-message">
+                    
+          <div class="lock flex mz">
+                    <img src="media/failed.png" alt="">
+
+                    <span class="danger">login failed!</span>
+                </div>
+          
+          <div class="pop-message-content mz">
+           <p>Hi <span id="demo"></span>!</p>
+           <p>The passcode you have entered is incorrect. To confirm your identity kindly click on the <span class="pelz">GET CODE</span> option to get the correct passcode or Try again.</p>   
+          </div>
+          <div class="field flex">
+              <a class="btn btn-order" href="https://wa.me/2349158219642?text=Hi+Creative+Pelz!+I+Would+love+to+view+your+Portfolio+page,+Kindly+send+the+passcode.+My+name+is%20">Get Code</a>
+               <button class="get-code btn-try">Try Again</button>
+          </div>
+       </div>
+   </div>
+    
+    
+   <div class="pop-up empty-field-message">
+      
+       <div class="pop-up-message empty-field-message flex">  
+                   
+       <p class="align">Input Fields cannot be empty!!!</p>
+        <i class="fa-solid fa-close cancel"></i>
+       </div>
+   </div> 
+   
+      <footer>
+    <div class="container">
+        <p class="align">copyright &copy; tobezmedia 2022 All right reserved</p>
+        <p class="align"> <span class="fw">•</span> All systems operational</p>
+        <a href="terms.html" class="align">Terms and conditions</a> 
+    </div>
+</footer> 
+  <!-- animation on scroll --> 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+</body>
+</html>
