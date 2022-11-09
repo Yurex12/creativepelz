@@ -1,0 +1,177 @@
+@media(max-width:768px){  
+        html{
+            font-size: 12px;
+        } 
+        
+       .container{
+        width: 100%;
+        padding:0 15px;
+        }  
+        .grid{
+             grid-template-columns: 1fr;               
+           }   
+         
+        .navs a:active,
+        .navs a:hover{
+         border-bottom: none; 
+         color: goldenrod;             
+        }
+        
+        /* header */
+               
+         /*Toggle*/
+       .menuToggle{
+        width:50px;
+        height: 25px;        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;       
+        align-content: center;  
+       position: relative;
+         overflow: hidden;
+      
+    }
+.menuToggle span{
+    position: absolute;
+      width: 20px;    
+      height: 2px;
+      background-color:white;
+      border-radius: 15px;
+        transition:0.5s ease-in;
+    }
+  .menuToggle  span:nth-child(1){
+    transform: translateY(-7px);
+      left: 10px;
+      transition-delay: 0.25s;
+    }
+ .menuToggle   span:nth-child(2){
+      width: 30px;
+    }
+  .menuToggle  span:nth-child(3){
+      transform: translateY(7px);
+      left: 10px;
+      transition-delay: 0.125s;
+     
+    }
+    
+   .activeToggle span:nth-child(1){
+      transform:translateY(0) rotateZ(45deg);
+      height: 3px;
+    }
+   .activeToggle span:nth-child(2){
+     transform: translateX(60px);
+    }
+   .activeToggle span:nth-child(3){
+     transform:translateY(0) rotateZ(-45deg);
+     height: 3px;
+    }
+
+    
+    /* navigation section */
+    .navs{
+    background-color: var(--secondary-color);        
+   width: 250px;
+   height:100%;
+   display: block;
+   position: fixed;
+   top: 45px;
+   left: -100%;
+   color:white;  
+   box-shadow:0 1px 4px 0 black;
+   transition:left 0.5s ease-in;
+  
+    }
+    .active{
+         left:0;
+    }
+    
+    .nav-section{
+   display: block; 
+   }
+   
+ .nav-section li{
+       line-height:1.4;      
+   }
+  .nav-section li a{  
+    font-weight:400; 
+    display: block;
+    border-left: 5px solid var(--secondary-color); 
+   transition: 0.5s;  
+   padding:  5px 0;            
+   }
+   .nav-section li a:active{
+     padding-left: 35px;
+     border-left-color: var(--sucess-color);
+     font-weight: 700;
+     color: goldenrod;
+   }
+   
+ .nav-section li i{
+      display: inline;      
+      padding: 7px;
+      font-size: 17px;
+   } 
+ /* socail media icons section */  
+  .social-section{
+       width: 250px;
+       padding: 5px 10px;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+      position: fixed;      
+      bottom: 0;
+   }
+   
+ .social-section li i{
+      font-size: 1.7em;   
+      padding:2px 7px;
+      color: white;
+  }
+  
+ /* home page */
+  .hero{       
+       min-height:200px;
+    } 
+      .showcase-three{
+          display: block;
+      }
+      
+   .showcase-four  h3{
+      margin:0 auto;
+      width: 90%;      
+    }
+    
+    /* contact page */
+    .message , .accordion {
+        width: 100%;
+    }
+    input,textarea{
+         width: 100%;
+         } 
+         
+         
+         /* portfolio page */
+         .login{
+             width: 100%;
+         }
+         
+         
+         /* extended portfolio page */         
+           
+      .design-box{     
+    width: 100%;
+    margin:1rem 0;    
+       } 
+           .btn-info{                
+        width:90%;       
+        margin: 7px auto;        
+        }
+        
+        
+        /* pop up */
+     .pop-up-message{
+            width: 80%;    
+           }
+     
+      }
