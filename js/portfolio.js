@@ -34,7 +34,7 @@ let password = document.getElementById("password");
      if (password.value === "cp2022") {
          lock.src = "media/unlocked.png"
          message.innerHTML = "Login Successful"
-         message.style.color = "green"    
+         message.style.color = "#09AE92"    
           setTimeout(login , 1500)     
         function login (){                  
          window.location.assign("portfoliopage.html")
