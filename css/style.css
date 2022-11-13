@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-       
-@import url('http://fonts.cdnfonts.com/css/dandeleon-vintage-demo');    
+  
+  
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 
 /* genaral styling */
@@ -96,7 +97,7 @@
       margin: 10px 0;  
     }
     .fs{
-        font-family: 'Dandeleon Vintage Demo', sans-serif;
+        font-family: 'Kaushan Script', cursive;
         font-size: 3.5rem;
         color: var(--sucess-color);
     }
